@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Chain - Movies</title>
+</head>
+<body>
+    <h1>Available Movies</h1>
+    <% movies.forEach(movie => { %>
+        <div>
+            <h2><%= movie.title %></h2>
+            <p>Total Seats: <%= movie.totalSeats %></p>
+            <p>Total Tickets: <%= movie.totalTickets %></p>
+            <p>Tickets Sold: <%= movie.ticketsSold %></p>
+        </div>
+    <% }); %>
+</body>
+</html>

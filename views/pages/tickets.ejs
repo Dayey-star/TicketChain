@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Chain - Tickets</title>
+</head>
+<body>
+    <h1>Your Tickets</h1>
+    <% userTickets.forEach(ticket => { %>
+        <div>
+            <h2>Movie: <%= ticket.movieTitle %></h2>
+            <p>Seat Number: <%= ticket.seatNumber %></p>
+            <p>User: <%= ticket.user %></p>
+        </div>
+    <% }); %>
+</body>
+</html>
